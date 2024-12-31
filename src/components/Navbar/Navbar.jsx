@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-[#7E90FE] bg-opacity-10">
+            <div className="navbar bg-[#7E90FE] bg-opacity-15">
                 <div className="navbar-start">
                     <div className="flex-1">
                         <a className="btn btn-ghost text-[32px] font-black">CareerHub</a>
