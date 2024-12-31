@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import jobDetailImg1 from "../../assets/Vector-one.png"
 import jobDetailImg from "../../assets/Vector.png"
 import toast from "react-hot-toast";
+import { saveJobApplication } from "../../Utils";
 
 const JobDetailsPage = () => {
     const jobs = useLoaderData()
@@ -10,6 +11,7 @@ const JobDetailsPage = () => {
     const job = jobs.find(job => job.id === idInt)
     console.log(id,job);
     const handleApplyNow = () => {
+        saveJobApplication(job.id)
         toast.success('Successfully toasted!')
     }
     return (
